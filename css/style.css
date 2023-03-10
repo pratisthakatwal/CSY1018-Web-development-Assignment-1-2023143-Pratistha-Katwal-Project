@@ -1,129 +1,143 @@
-
-
-.nav-bar{
-    background-color: grey;
-    padding: 7px;
-    justify-content: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/2.jpg");
+    background-position: bottom;
+    background-size: cover;
     display: flex;
-    align-items: center;
-    position: sticky;
-    
+    align-items: flex-end;
+    justify-content: center;
 }
+a{
+    text-decoration: none;
+}
+.menu{
+    margin-bottom: 100px;
+    margin-right: 550px;
+    color: antiquewhite;
+    text-align: center;
+}
+.menu h3{
+    font-size: 5vmin;
+}
+.head{
+    width: 150px;
+    height: 5px;
+    background: pink;
+    margin: 10px auto;
+    border-radius: 7px;
 
-.nav-menu{
-    list-style-type: none;
 }
-.nav-menu-item{
-    display: inline;
-    padding:10px;
-    
+.menu h1{
+    font-size: 6vmin;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.exp{
+    padding: 9px 17px;
+    background: whitesmoke;
+    border-radius: 32px;
+    color: blue;
+}
+ul{
+    list-style: none;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: antiquewhite;
+}
+.menu-links{
+    display: flex;
+    align-items: right;
+    color: antiquewhite;
+}
+.menu-links li{
+    margin: 0 25px;
+
 }
 .nav-menu-item >a{
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    padding: 8px 25px;
-    margin:0px;
+    color: antiquewhite;
     font-size: 1.1rem;
     font-weight: bold;
-    transition:all .5s ease;
+    transition: all .5s ease;
 }
 .nav-menu-item :hover{
-    background-color:pink;
-    box-shadow: 0 0 10px pink;
+    background-color: blue;
+    box-shadow: 0 0 10px blue;
 }
-.active{
-    border-bottom:2px solid royalblue
-}
-.feature-img{
-    height:60%;
-    position:absolute;
-    bottom:100px;
-    right: 100px;
-   
-    
-}
-.content{
-    padding-top: 0px;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top:35%;
-    left:15%;
 
+.active{
+    border-bottom: 1px solid pink;
     
-    
 }
-h3{
-    color: rgb(211, 209, 41);
-    margin:30px 0px 30px;
-    font-size: 45px;
-    padding: 0px;
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    width: 40px;
+    cursor: pointer;
+
 }
-h5{
-    color: rgb(34, 106, 208);
-    letter-spacing: 2px;
-    font-size: 35px;
-    justify-content: left;
-    padding: 0px;
-    margin-bottom: 0px;
-}
-.content p{
-    color: white;
-    margin-top:0px;
-    margin-bottom:10px;
-    justify-content: left;
-}
-.fa{
-    font-size: 10px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
+.portfolio .images{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     align-items: center;
-    text-decoration: none;
-    margin: 5px 5px;
-    border-radius: 50%;
-    display: inline-flex;
 }
-.fa:hover{
-    opacity: 0.7;
+.images img{
+    max-width: 300px;
+    margin: 5px;
+    margin-left: 10px;
+    padding: 5px;
+    
+
 }
-.fa-facebook {
-    background: #1657e3;
-    color: white;
-  }
-  
-  .fa-twitter{
-    background: #55ACEE;
-    color: white;
-  }
-  .fa-instagram{
-    background: #ac2a71;
-    color: white;
-  }
+.portfolio h1 {
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width:800px) {
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .menu-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: rgb(43, 43, 119);
+        margin-top: -900px;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+
+    }
+    .images img{
+        width:80%
+
+
+    }
+}
+
 
   /*Portfolio page */
+ 
 
-#portfolio{
-    display: flex;
-    flex-direction: column;
-  }
-
-.gallery{
- display: grid;
- position: absolute;
- margin-top: 10px;
- width: 100vw;
- justify-content: center;
- box-sizing: border-box;
- align-items: center;
- grid-template-columns: repeat(auto-fill,minmax(300px,300px));
- column-gap: 15px;
- row-gap: 15px;
-}
-.gallery img{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
-}
+/* CSS for the contact page */
+                       
