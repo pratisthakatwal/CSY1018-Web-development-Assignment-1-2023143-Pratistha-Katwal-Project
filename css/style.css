@@ -109,6 +109,64 @@ h2{
     margin-bottom: 10px;
     padding: 10px;
 }
+/*Contact page */
+
+.contactform h4{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    text-align: center;
+    padding-top: 80px;
+}
+.contactform p{
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(56, 10, 99);
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin-left: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.contactform form{
+    position: relative;
+    margin-top: 30px;
+    margin-right: 300px;;
+}
+.contactform form input, form textarea{
+    width: 50%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: black;
+    color: aliceblue;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 15px;
+    margin-left: 50px;
+    margin-right: 200px;
+    
+}
+.contactform textarea{
+    resize: none;
+    height: 150px;
+}
+.contactform form .send{
+    display: inline-block;
+    background:rgb(196, 52, 114);
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50px;
+    width: 150px;
+    transition: ease .24s;
+    text-transform: uppercase;
+    
+}
+
+
+
 @media only screen and (max-width:800px) {
     .navbar{
         padding: 0;
@@ -147,11 +205,9 @@ h2{
         color: rgb(196, 52, 114);
     }
     
+    .portfolio .image-gallery{
     
-    .images img{
-        width:80%
-
-
+    flex-direction: column;
     }
 }
 
