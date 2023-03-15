@@ -111,7 +111,10 @@ h2{
 }
 /* CSS for Contact*/
 /*Contact page */
-
+#contact{
+    justify-content: center;
+    align-items: center;
+}
 .contactform h4{
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -165,7 +168,10 @@ h2{
     text-transform: uppercase;
     
 }
-
+.form-action{
+    justify-content: center;
+    align-items: center;
+}
 
 /* CSS for Work experience*/
 .time{
@@ -278,11 +284,18 @@ z-index: 10px;
     padding: 20px;
 
 }
-
+.site2{
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    padding-left: 30px;
+}
 .site2 img{
-    height: 250px;
-    width: 400x;
+    height: 320px;
+    width: 500x;
     padding: 15px;
+    margin: 20px auto;
+    margin-right: 30px;
 
 }
 .site2 img:hover{
@@ -290,7 +303,13 @@ z-index: 10px;
     box-shadow: 0 0 15px black;
     display: inline
 }
-@media only screen and (max-width:600px) {
+.top{
+    text-align: center;
+}
+.top h7{
+    font-size: 35px;
+}
+@media only screen and (max-width:500px) {
     .menu-links{
         display: none;
     }
@@ -319,17 +338,64 @@ z-index: 10px;
     .portfolio .image-gallery{
         flex-wrap: wrap;
     }
+    .image-gallery img{
+        max-width: 300px;
+        margin: 8px;
+        margin-left: 55px;
+        margin-top: 45px;
+    }
+    h2{
+        font-size: 7vmin;
+        color:rgb(127, 76, 184);
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 2px;
+        padding: 10px;
+    }
     .contact{
         padding: 10%;
     }
     .contactform form{
-        position: relative;
+    position: absolute;
     margin-top: 30px;
     margin-right: 5px;;
     }
-
-
-
+    .contactform form input, form textarea{
+        width: 45%;
+        padding: 20px;
+        border: none;
+        outline: none;
+        background: black;
+        color: aliceblue;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        border-radius: 15px;
+        margin-left: 30px;
+        margin-right: 250px;
+        
+    }
+    .contactform h4{
+        font-size: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom: 10px;
+        margin-left: 60px;
+        text-align: center;
+        padding-top: 80px;
+    }
+    .contactform p{
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(56, 10, 99);
+        line-height: 18px;
+        letter-spacing: 1px;
+        margin-left: 20px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .form-action{
+        justify-content: center;
+        align-items: center;
+    }
     .timeline{
         margin: 50px auto;
 
@@ -374,10 +440,15 @@ z-index: 10px;
         padding: 20px;
     
     }
-    
+    .site2{
+        justify-content: center;
+        align-items: center;
+        margin-left: 35px;
+        padding-left: 30px;
+    }
     .site2 img{
-        height: 250px;
-        width: 330x;
+        height: 200px;
+        width: 250x;
         padding: 7px;
     }
 }
