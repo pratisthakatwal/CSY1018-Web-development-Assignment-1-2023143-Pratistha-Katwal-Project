@@ -13,8 +13,50 @@ header{
     align-items: flex-end;
     justify-content: center;
 }
-a{
+nav{
+    height: 50px;
+    background: rgb(60, 129, 208);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+}
+nav .logo{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 13px;
+}
+
+nav ul li a{
+    color: rgb(248, 244, 248);
     text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px 10px;
+    border-radius: 7px;
+}
+nav ul li a:hover{
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 5px 5px 8px #c5a0d9, 10px 10px 8px burlywood, 15px 15px 8px rgb(239, 143, 143);
+    margin: 15px;
+    transition: all 0.5s ease;
+}
+nav .menu-btn i{
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
 }
 .menu{
     margin-bottom: 100px;
@@ -44,70 +86,38 @@ a{
     border-radius: 32px;
     color: blue;
 }
-ul{
-    list-style: none;
-}
-.navbar{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 20px;
-    color: antiquewhite;
-}
-.menu-links{
-    display: flex;
-    align-items: right;
-    color: antiquewhite;
-    margin-left: 500px;
-    margin-top: 20px;
-}
-.menu-links li{
-    margin: 0 25px;
-
-}
-.nav-menu-item >a{
-    color: antiquewhite;
-    font-size: 1.1rem;
-    font-weight: bold;
-    transition: all .5s ease;
-}
-.nav-menu-item :hover{
-    background-color: rgb(96, 83, 145);
-    box-shadow: 0 0 10px pink;
-    display: inline;
-}
-.navbar .toggle-button{
-    margin-top: 15px;
-    color: aliceblue;
-    font-size: 2rem;
-    cursor: pointer;
-    display: none;
-}
 
 /* CSS for portfolio*/
-.portfolio .image-gallery{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-    
+.portfolio{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    background: pink;
+    overflow: auto;
+
+}
+.image-gallery{
+    margin: 25px 45px;
+    border: 1px solid black;
+    float: left;
+    width: 400px;
+
 }
 .image-gallery img{
-    max-width: 400px;
-    margin: 15px;
-    margin-left: 60px;
-    margin-top: 10px;
+    width: 100%;
+    height: 350px;
+
 }
-h2{
-    font-size: 6vmin;
-    color:black;
+.words{
+    padding: 15px;
     text-align: center;
-    margin-top: 60px;
-    margin-bottom: 10px;
-    padding: 10px;
+}
+.headings{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 /* CSS for Contact*/
 /*Contact page */
@@ -222,21 +232,22 @@ h2{
     left: 50%;
 }
 .container img{
-    position:absolute;
+    position:fixed;
     width: 55px;
 border-radius: 50%;
 right: -20px;
 top: 30px;
-z-index: 10px;
+
 }
 .right-container img{
-    left: -20px;
+    left: -32px;
 }
+
 .time::after{
     content: '';
-    position: absolute;
+    position:static;
     width: 6px;
-    height: 100%;
+    height: 80%;
     background: rgb(163, 103, 203);
     top: 0;
     left: 50%;
@@ -261,59 +272,105 @@ z-index: 10px;
     font-size: 15px;
 }
 .text p{
-    font-size: 19;
+    font-size: 19px;
 }
 /* Site report*/
 
 .site p{
     font-family: Arial, Helvetica, sans-serif;
-    padding: 15px;
-}
- h8{
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-left: 20px;
-    padding-top: 20px;
-}
-#report{
-    width: 850px;
-    height: 380px;
-    margin: 100px auto;
-    background: rgb(137, 217, 184);
-    position: relative;
-    padding: 20px;
-
-}
-.site2{
-    justify-content: center;
-    align-items: center;
-    margin-left: 40px;
-    padding-left: 30px;
-}
-.site2 img{
-    height: 320px;
-    width: 500x;
-    padding: 15px;
-    margin: 20px auto;
-    margin-right: 30px;
-
-}
-.site2 img:hover{
-    
-    box-shadow: 0 0 15px black;
-    display: inline
-}
-.top{
+    padding: 10px;
     text-align: center;
 }
-.top h7{
+.report{
+    column-count: 2;
+    background-color: #c5a0d9;
+    width: 700px;
+    height: 650px;
+    justify-content: left;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.duty{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;
+    
+}
+.char{
     font-size: 35px;
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.square{
+    padding: 1rem;
+    justify-content: center;
+}
+.slide{
+    position: relative;
+    max-width: 65rem;
+    margin-left: 200px;
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 20px;
+    color: darkcyan;
+}
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    color: burlywood;
 }
 @media only screen and (max-width:500px) {
-    .menu-links{
-        display: none;
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #c5a0d9;
+        height: 100vh;
+        display: block;
+        text-align: center;
+        transition: all 0.5s ease;
     }
-    .navbar .toggle-button{
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    #click:checked ~ menu-btn i::before{
+        content: "\f00d";
+    }
+    nav ul li{
+        margin: 40px 0;
+
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    nav .menu-btn i{
         display: block;
     }
     header .menu h1{
@@ -328,12 +385,6 @@ z-index: 10px;
     }
     .exp{
         margin-left: 200px;
-        
-    }
-    .nav-menu-item :hover{
-        background-color: rgb(96, 83, 145);
-        box-shadow: 0 0 10px pink;
-        
     }
     .portfolio .image-gallery{
         flex-wrap: wrap;
@@ -397,19 +448,19 @@ z-index: 10px;
         align-items: center;
     }
     .timeline{
-        margin: 50px auto;
+        margin: 40px auto;
 
     }
     .time::after{
-        left: 30px;
+        left: 20px;
     }
     .container{
-        width: 100%;
-        padding-left: 70px;
+        width: 90%;
+        padding-left: 60px;
         padding-right: 25px;
     }
     .text h6{
-        font-size: 15px;
+        font-size: 13px;
     }
     .text small{
         margin-bottom: 7px;
@@ -418,38 +469,29 @@ z-index: 10px;
         left: 0;
     }
     .left-conatiner img, .right-container img{
-        left: 13px;
+        left: 10px;
     }
    
     .site p{
         font-family: Arial, Helvetica, sans-serif;
         padding: 15px;
     }
-     h8{
-        font-size: 20px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        padding-left: 20px;
-        padding-top: 20px;
+    .report{
+    column-count: 2;
+    background-color: #c5a0d9;
+    width: 500px;
+    height: 700px;
+    justify-content: left;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 20px;
     }
-    #report{
-        width: 450px;
-        height: 700px;
-        margin: 100px auto;
-        background: rgb(137, 217, 184);
+    .slide{
         position: relative;
-        padding: 20px;
-    
-    }
-    .site2{
-        justify-content: center;
-        align-items: center;
-        margin-left: 35px;
-        padding-left: 30px;
-    }
-    .site2 img{
-        height: 200px;
-        width: 250x;
-        padding: 7px;
+        max-width: 70rem;
+        margin-left: 20px;
     }
 }
 
